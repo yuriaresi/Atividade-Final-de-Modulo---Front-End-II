@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+
+header h1 {
+    margin: 0;
+    font-family: 'Cursive', cursive;
+    font-size: 3rem;
+    color: rgb(81, 177, 81);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+body {
+    background-image: url(./imagens/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    padding: 0;
+    height: 100vh; 
+}
+
+
+
+.personagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+
+.personagens {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+}
+
+.personagens:hover {
+    scale: 1.1;
+}
+
+.personagens b, span {
+    font-size: 18px;
+}
+
+.personagens img {
+    max-width: 75%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.texto{
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    max-width: 77%;
+    margin-left: 33px;
+}
+
+
+.proximaPagina {
+    position: fixed;
+    top: 40%;
+    right: 30px;
+    color:black;
+    
+    background: transparent;
+    border: none !important;
+    font-size: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.proximaPagina:hover {
+scale: 1.2;
+}
+
+.voltarPagina{
+    position: fixed;
+    top: 40%;
+    left: 30px;
+    color:black;
+    
+    background: transparent;
+    border: none !important;
+    font-size: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.voltarPagina:hover {
+scale: 1.2;
+}   
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+
+footer img {
+    margin-top: 5%;
+    width: 15%;
+    display: block;
+}
